@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM gradle:7.6.1-alpine AS builder
+FROM gradle:8.2.1-alpine AS builder
 WORKDIR /temp
 COPY gradlew .
 COPY build.gradle .
