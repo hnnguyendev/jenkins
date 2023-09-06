@@ -1,9 +1,7 @@
-# This configuration is intended for development purpose, it's **your** responsibility to harden it for production
 version: '3.8'
 services:
   jenkins-app:
-    build:
-      dockerfile: Dockerfile
+    image: jenkins-formos:v1.0.0
     container_name: jenkins-app
     ports:
       - 8089:8080
