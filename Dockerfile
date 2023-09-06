@@ -7,7 +7,7 @@ COPY build.gradle .
 COPY settings.gradle .
 COPY gradle gradle
 COPY src src
-RUN ./gradlew build
+RUN ./gradlew clean build
 
 FROM eclipse-temurin:11-jdk-jammy
 ENV ARTIFACT_NAME=jenkins-0.0.1-SNAPSHOT.jar
